@@ -5,7 +5,9 @@ tar xvzf nifi-1.9.0-bin.tar.gz
 tar xvzf nifi-registry-0.3.0-bin.tar.gz
 rm -f nifi-1.9.0-bin.tar.gz
 rm -f nifi-registry-0.3.0-bin.tar.gz
-cp /home/mezaf/Documents/NiFi_script_Deploy/flow.xml.gz /opt/nifi-1.9.0/conf
+cp flow.xml.gz /opt/nifi-1.9.0/conf
+cp archive/* /opt/nifi-1.9.0/archive
+cp nifi-registry.mv.db /opt/nifi-registry-0.3.0/database/nifi-registry.mv.db
 apt-get install openjdk-8-jdk
 export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
 export JRE_HOME=/user/lib/jvm/java-8-openjdk-amd64/jre/
