@@ -5,8 +5,8 @@ tar -C /opt -xvzf /opt/nifi-registry-0.3.0-bin.tar.gz
 rm -f /opt/nifi-1.9.0-bin.tar.gz
 rm -f /opt/nifi-registry-0.3.0-bin.tar.gz
 cp flow.xml.gz /opt/nifi-1.9.0/conf
-cp archive/* /opt/nifi-1.9.0/archive
-cp nifi-registry.mv.db /opt/nifi-registry-0.3.0/database/nifi-registry.mv.db
+cp archive/* /opt/nifi-1.9.0/archive/
+cp nifi-registry.mv.db /opt/nifi-registry-0.3.0/database/
 apt-get install openjdk-8-jdk
 export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
 export JRE_HOME=/user/lib/jvm/java-8-openjdk-amd64/jre/
