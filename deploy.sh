@@ -4,6 +4,8 @@ tar -C /opt -xvzf /opt/nifi-1.9.0-bin.tar.gz
 tar -C /opt -xvzf /opt/nifi-registry-0.3.0-bin.tar.gz
 rm -f /opt/nifi-1.9.0-bin.tar.gz
 rm -f /opt/nifi-registry-0.3.0-bin.tar.gz
+mkdir /opt/nifi-1.9.0/conf/archive/
+mkdir /opt/nifi-registry-0.3.0/database/
 cp flow.xml.gz /opt/nifi-1.9.0/conf
 cp archive/* /opt/nifi-1.9.0/conf/archive/
 cp nifi-registry-primary.mv.db /opt/nifi-registry-0.3.0/database/
